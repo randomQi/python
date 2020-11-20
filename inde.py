@@ -7,7 +7,12 @@ print  (__name__ )
 def  demohanshu():
     print("测试函数成功")   
 
-
+def test(parameter_list):
+    """
+    docstring
+    """
+    print(parameter_list)
 
 if __name__ == "__main__":
     demohanshu()
+    test("小李")
