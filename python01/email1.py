@@ -4,11 +4,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
  
-sender = 'from@runoob.com'
+sender = 'from@qq.com'
 receivers = ['429240967@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
  
 msgRoot = MIMEMultipart('related')
-msgRoot['From'] = Header("菜鸟教程", 'utf-8')
+msgRoot['From'] = Header("测试邮件标题-------", 'utf-8')
 msgRoot['To'] =  Header("测试", 'utf-8')
 subject = 'Python SMTP 邮件测试'
 msgRoot['Subject'] = Header(subject, 'utf-8')
@@ -19,7 +19,7 @@ msgRoot.attach(msgAlternative)
  
 mail_msg = """
 <p>Python 邮件发送测试...</p>
-<p><a href="http://www.runoob.com">菜鸟教程链接</a></p>
+<p><a href="http://www.baidu.com">测试链接</a></p>
 <p>图片演示：</p>
 <p><img src="cid:image1"></p>
 """
